@@ -1,11 +1,15 @@
 provider "aws" {
   region  = "us-east-1"
   alias   = "main"
+  access_key = var.access_key
+  secret_key = var.secret_key
 }
 
 provider "aws" {
   region  = "us-east-2"
   alias   = "secondary"
+  access_key = var.access_key
+  secret_key = var.secret_key
 }
 
 # BACKEND QUE SOPORTA LA INFRAESTRUCTURA A DESPLEGAR
